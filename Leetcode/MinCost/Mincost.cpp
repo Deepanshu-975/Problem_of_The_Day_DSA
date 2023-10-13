@@ -1,6 +1,7 @@
 #include <vector>
 #include <algorithm>
 
+// approch1 
 int minCostClimbingStairs(std::vector<int>& cost) {
     int n = cost.size();
     std::vector<int> dp(n, 0);
@@ -20,3 +21,21 @@ int minCostClimbingStairs(std::vector<int>& cost) {
 
 // tc : o(n)
 // sc : o(n)
+
+
+// approch 2
+ int minCostClimbingStairs(vector<int>& cost) {
+        int n = cost.size();
+        int prev1 = 0, prev2 = 0;
+
+        for (int i = 2; i <= n; i++) {
+            int current_cost = min(prev1 + cost[i - 1], prev2 + cost[i - 2]);
+            prev2 = prev1;
+            prev1 = current_cost;
+        }
+
+        return prev1;
+    }
+
+    // tc : o(n)
+    // sc : o(1)
