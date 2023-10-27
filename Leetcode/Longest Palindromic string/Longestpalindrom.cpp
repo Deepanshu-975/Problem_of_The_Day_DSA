@@ -1,0 +1,36 @@
+ #include<iostream>
+ #include<string>
+ using namespace std;
+ 
+ string longestPalindrome(string s) {
+       string res = "";
+        int reslen = 0;
+
+        for (int i = 0; i < s.length(); i++) {
+            // Odd length
+            int l = i, r = i;
+            while (l >= 0 && r < s.length() && s[l] == s[r]) {
+                if (r - l + 1 > reslen) {
+                    res = s.substr(l, r - l + 1);
+                    reslen = r - l + 1;
+                }
+                l--;
+                r++;
+            }
+
+            // Even length
+            l = i;
+            r = i + 1;
+            while (l >= 0 && r < s.length() && s[l] == s[r]) {
+                if (r - l + 1 > reslen) {
+                    res = s.substr(l, r - l + 1);
+                    reslen = r - l + 1;
+                }
+                l--;
+                r++;
+            }
+        }
+
+        return res;
+        
+    }
