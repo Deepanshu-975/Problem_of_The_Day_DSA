@@ -1,0 +1,14 @@
+Approach Counting Sort 2 nd code 
+Our alternative approach still begins with the calculation of arrival times, but instead of sorting these times, we use a different method to keep track of when we need to act. Here's how we can proceed:
+
+Calculate Rounded Arrival Times:
+Like before, we calculate the time it takes for each monster to reach the city. However, this time we round up each time to the nearest whole minute using ceil. This is because we can only act on whole minutes.
+
+Use Counting Sort Logic:
+Instead of sorting, we apply a counting sort-like logic. We know the exact range of possible arrival times (from 1 to n minutes), so we can simply count the number of monsters arriving at each minute.
+
+Simulate the Defense:
+We then simulate the defense minute by minute, using the accumulated count of monsters. If at any minute, the number of monsters that have accumulated is greater than the time elapsed, we can't defend against them all, and we return the number of monsters eliminated until that minute.
+
+Return Result:
+If we can defend until the last minute without being overrun, we have successfully eliminated all monsters and return the total count n.
