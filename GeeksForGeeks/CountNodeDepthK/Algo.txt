@@ -1,0 +1,12 @@
+Algorithm:
+
+Initialize an empty set s to store depths of special nodes.
+Define a recursive function countSpecial that traverses the tree.
+In countSpecial, if a leaf node is encountered and the depth is equal to k, insert the depth into set s.
+Recursively call countSpecial on left and right subtrees, incrementing depth by 1 for each recursive call.
+In printKDistantfromLeaf, call countSpecial to populate set s with depths of special nodes.
+Recursively count special nodes in left and right subtrees and return the sum of set size s and counts from left and right subtrees.
+Time Complexity: O(N), where N is the number of nodes in the binary tree.
+Space Complexity: O(N), for the set s.
+
+This algorithm accurately counts the number of special nodes in the binary tree at a distance k from any leaf.
