@@ -1,0 +1,33 @@
+Explanation 1 code :
+
+Initialize result string to store the first palindrome found.
+Iterate through each word in the input vector.
+For each word, initialize low and high indices to check for palindromes.
+Use a boolean flag isPalindrome to track if the current word is a palindrome.
+Check each character from both ends of the word, breaking out of the loop if characters don't match.
+If the word is a palindrome, update result and exit the loop.
+Return the result.
+Time Complexity: 
+�
+(
+�
+⋅
+�
+)
+O(n⋅m), where 
+�
+n is the number of words and 
+�
+m is the maximum length of a word.
+
+Space Complexity: 
+�
+(
+1
+)
+O(1), as we're using constant space except for the input and output.
+
+
+
+
+
