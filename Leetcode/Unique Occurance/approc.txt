@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Intuition
 In the given problem we have to find the array have unique no occurance of elements if the occurance of any of the element is same then we return false otherwise return true
 
@@ -15,3 +16,22 @@ Time complexity:
 the time complexity of the code is O(N), where N is the size of the input array.
 
 the space complexity of the code is O(N), where N is the size of the input array.
+=======
+Intuition
+In the given problem we have to find the array have unique no occurance of elements if the occurance of any of the element is same then we return false otherwise return true
+
+Approach
+To solve this particular problem i am using unordered map and set to keep record of occurance the element come's in..
+
+1 we declare an unordered map and then itearate a loop and add array element in it and their occurances.
+
+2 then we create an unorderd set for keeping the count of unique values using for loop.
+
+3 check the conditon if occurance.count(it.second)>0 then return false otherwise return true.
+
+Complexity
+Time complexity:
+the time complexity of the code is O(N), where N is the size of the input array.
+
+the space complexity of the code is O(N), where N is the size of the input array.
+>>>>>>> 24694c16372f1391a6ccdfdcb19b9d545dabcfe5
