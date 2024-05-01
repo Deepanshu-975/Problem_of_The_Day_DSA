@@ -1,0 +1,15 @@
+Intuition
+The intutuion behind the problem is we have to reverse the prfixe char till the index where the first occrance of char ch is met.
+
+Approach
+1.I initalize two variables start =0 , end =-1 and check if the string is empty then return "".
+2.iterate over the for loop till we find the first occurance of char ch if we find it then update end with i and break the iteration.
+3.for swapping the char we use while loop till the start is less than or equal to end then swap word[start] ,ward[end] & increase the start by one and decrease the end by one.
+4.return the string.
+
+Complexity
+Time complexity:
+TC: O(n) for iterating over the loop n times in wrost case.
+
+Space complexity:
+SC: O(1) we don't use any extra space.
