@@ -1,0 +1,19 @@
+1.Initialization:
+We create a vector projects to store pairs of capital and profits.
+We sort the projects based on the required capital.
+2.Heap Operations:
+We use a max-heap to keep track of the maximum profit we can get from the projects that can be started with the current capital.
+3.Iterative Process:
+For each project (up to 
+𝑘
+k):
+Add all projects that can be started with the current capital to the max-heap.
+If no projects are available to start, we break the loop.
+Otherwise, we start the project with the highest profit and add its profit to the current capital.
+4.Return:
+The function returns the maximized capital after performing up to 
+𝑘
+k projects.
+
+tC: O(N LOG N) + O(K LOG N)
+SC: O(N)
