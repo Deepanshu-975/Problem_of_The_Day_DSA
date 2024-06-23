@@ -1,0 +1,29 @@
+Time Complexity:
+
+Sieve of Eratosthenes: 
+𝑂
+(
+𝑛
+log
+⁡
+log
+⁡
+𝑛
+)
+O(nloglogn)
+Two-pointer search: 
+𝑂
+(
+𝑛
+)
+O(n)
+Space Complexity:
+
+Sieve of Eratosthenes storage: 
+𝑂
+(𝑛)
+O(n) for the boolean array, and 
+𝑂
+(𝑛
+/log𝑛)
+O(n/logn) for the prime numbers list.
